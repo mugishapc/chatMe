@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Main App Container -->
+<div class="app-container">
+    <!-- Sidebar -->
+    <div class="sidebar active" id="sidebar">
+        <div class="sidebar-header">
+            <div class="user-info">
+                <div class="user-avatar" id="userAvatar">U</div>
+                <div>
+                    <div class="user-name" id="userName">User</div>
+                    <div class="user-status">Online</div>
+                </div>
+            </div>
+            <div class="header-actions">
+                <i class="fas fa-users" id="adminPanelBtn" style="display: none;"></i>
+                <i class="fas fa-sign-out-alt" id="logoutBtn" title="Logout"></i>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search users..." id="searchInput">
+            </div>
+        </div>
+
+        <div class="chat-list" id="chatList">
+            <!-- Users will be populated dynamically -->
+        </div>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="chat-area" id="chatArea">
+        <div class="chat-header">
+            <div class="back-button" id="backButton">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="chat-user-info">
+                <div class="user-avatar" id="chatUserAvatar">U</div>
+                <div>
+                    <div class="user-name" id="chatUserName">User</div>
+                    <div class="user-status" id="chatUserStatus">Online</div>
+                </div>
+            </div>
+            <div class="chat-actions">
+                <i class="fas fa-video" id="videoCallBtn" title="Video Call"></i>
+                <i class="fas fa-phone" id="voiceCallBtn" title="Voice Call"></i>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+
+        <div class="messages-container" id="messagesContainer">
+            <!-- Messages will be populated dynamically -->
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="typing-text">is typing...</span>
+            </div>
+        </div>
+
+        <div class="message-input-container">
+            <div class="input-actions">
+                <i class="fas fa-paperclip" id="attachBtn" title="Attach File"></i>
+                <i class="fas fa-camera" id="cameraBtn" title="Take Photo"></i>
+            </div>
+            <input type="text" class="message-input" id="messageInput" placeholder="Type a message..." maxlength="1000">
+            <div class="input-actions">
+                <i class="fas fa-microphone" id="voiceMessageBtn" title="Voice Message"></i>
+            </div>
+            <button class="send-button" id="sendMessageBtn" title="Send Message">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- No Chat Selected -->
+    <div class="no-chat-selected active" id="noChatSelected">
+        <div class="no-chat-content">
+            <i class="fas fa-comments"></i>
+            <h3>Welcome to MpChat</h3>
+            <p>Select a user from the list to start messaging, or wait for someone to message you.</p>
+            <div style="margin-top: 20px; font-size: 14px; color: var(--gray);">
+                <i class="fas fa-info-circle"></i>
+                Your messages are encrypted and secure
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Call Screen -->
+<div class="screen call-screen" id="callScreen">
+    <div class="call-container">
+        <div class="caller-info">
+            <div class="caller-avatar" id="callerAvatar">U</div>
+            <div class="caller-name" id="callerName">User</div>
+            <div class="call-status" id="callStatus">Calling...</div>
+        </div>
+        <div class="call-controls">
+            <div class="call-button decline-call" id="declineCallBtn" title="Decline Call">
+                <i class="fas fa-phone-slash"></i>
+            </div>
+            <div class="call-button accept-call" id="acceptCallBtn" title="Accept Call">
+                <i class="fas fa-phone"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Admin Panel -->
+<div class="screen admin-panel" id="adminPanel">
+    <div class="admin-container">
+        <div class="admin-header">
+            <div class="back-button admin-back-btn" id="adminBackBtn">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <h2>Admin Panel</h2>
+        </div>
+        <div class="admin-content">
+            <div class="admin-section">
+                <h3>User Management</h3>
+                <div class="user-list" id="adminUserList">
+                    <!-- Users will be populated dynamically -->
+                </div>
+            </div>
+            <div class="admin-section">
+                <h3>Quick Actions</h3>
+                <div class="chat-management">
+                    <button class="btn btn-danger" id="refreshUsersBtn" onclick="location.reload()">
+                        <i class="fas fa-sync-alt"></i> Refresh Data
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Notification -->
+<div class="notification" id="notification">
+    <div class="notification-content">
+        <div class="notification-icon">
+            <i class="fas fa-comment"></i>
+        </div>
+        <div class="notification-text">
+            <strong id="notificationSender">MpChat</strong>
+            <span id="notificationMessage">New message</span>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/auth.js') }}"></script>
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+{% endblock %}

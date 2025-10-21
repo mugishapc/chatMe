@@ -1,0 +1,32 @@
+{
+    "name": "MpChat",
+    "short_name": "MpChat",
+    "description": "WhatsApp-like messaging PWA",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#075E54",
+    "theme_color": "#128C7E",
+    "orientation": "portrait",
+    "scope": "/",
+    "categories": ["social", "communication"],
+    "icons": [
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiMxMjhDN0UiLz4KPHBhdGggZD0iTTc2IDk4Qzc2IDg4LjA1ODkgODQuMDU4OSA4MCA5NCA4MEg5OEMxMDcuOTQxIDgwIDExNiA4OC4wNTg5IDExNiA5OFYxMTRDMTE2IDEyMy45NDEgMTA3Ljk0MSAxMzIgOTggMTMySDk0Qzg0LjA1ODkgMTMyIDc2IDEyMy45NDEgNzYgMTE0Vjk4WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTExNiA3OEMxMTYgODcuOTQxMSAxMDcuOTQxIDk2IDk4IDk2SDk0Qzg0LjA1ODkgOTYgNzYgODcuOTQxMSA3NiA3OFY2MEM3NiA1MC4wNTg5IDg0LjA1ODkgNDIgOTQgNDJIOThDMTA3Ljk0MSA0MiAxMTYgNTAuMDU4OSAxMTYgNjBWNzhaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K",
+            "sizes": "192x192",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iNjQiIGZpbGw9IiMxMjhDN0UiLz4KPHBhdGggZD0iTTIwMi4xMzMgMjk3Ljg2N0MyMDIuMTMzIDI1OC4xODcgMjMzLjgxMyAyMjYuNSAyNzMuNSAyMjYuNUgyODMuNzVDMzIzLjQzNyAyMjYuNSAzNTUuMTE3IDI1OC4xODcgMzU1LjExNyAyOTcuODY3VjM1OS4yMDhDMzU1LjExNyAzOTguODkxIDMyMy40MzcgNDMwLjU3MSAyODMuNzUgNDMwLjU3MUgyNzMuNUMyMzMuODEzIDQzMC41NzEgMjAyLjEzMyAzOTguODkxIDIwMi4xMzMgMzU5LjIwOFYyOTcuODY3WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTM1NS4xMTcgMjAyLjEzM0MzNTUuMTE3IDI0MS44MTMgMzIzLjQzNyAyNzMuNSAyODMuNzUgMjczLjVIMjczLjVDMjMzLjgxMyAyNzMuNSAyMDIuMTMzIDI0MS44MTMgMjAyLjEzMyAyMDIuMTMzVjE0MC43OTJDMjAyLjEzMyAxMDEuMTEgMjMzLjgxMyA2OS40Mjk3IDI3My41IDY5LjQyOTdIMjgzLjc1QzMyMy40MzcgNjkuNDI5NyAzNTUuMTE3IDEwMS4xMSAzNTUuMTE3IDE0MC43OTJWMjAyLjEzM1oiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=",
+            "sizes": "512x512",
+            "type": "image/svg+xml"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjU2MCIgdmlld0JveD0iMCAwIDMyMCA1NjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMjAiIGhlaWdodD0iNTYwIiBmaWxsPSIjMDc1RTU0Ii8+CjxyZWN0IHg9IjEwIiB5PSIxMCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSI1NDAiIHJ4PSIyMCIgZmlsbD0id2hpdGUiLz4KPHJlY3QgeD0iMjAiIHk9IjIwIiB3aWR0aD0iMjgwIiBoZWlnaHQ9IjYwIiByeD0iMTAiIGZpbGw9IiMxMjhDN0UiLz4KPHJlY3QgeD0iNDAiIHk9IjQwIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHJ4PSIyMCIgZmlsbD0iI0RDRTVERCIvPgo8cmVjdCB4PSIyMCIgeT0iMTAwIiB3aWR0aD0iODAiIGhlaWdodD0iMTUiIHJ4PSI1IiBmaWxsPSIjRUNGNUZGIi8+CjxyZWN0IHg9IjIyMCIgeT0iMTAwIiB3aWR0aD0iODAiIGhlaWdodD0iMTUiIHJ4PSI1IiBmaWxsPSIjRUNGNUZGIi8+CjxyZWN0IHg9IjQwIiB5PSIxMzAiIHdpZHRoPSIyMDAiIGhlaWdodD0iNDAiIHJ4PSIxMCIgZmlsbD0iI0RDRjhDNiIvPgo8cmVjdCB4PSI4MCIgeT0iMjAwIiB3aWR0aD0iMTYwIiBoZWlnaHQ9IjQwIiByeD0iMTAiIGZpbGw9IiNFQ0Y1RkYiLz4KPHJlY3QgeD0iNDAiIHk9IjI3MCIgd2lkdGg9IjI0MCIgaGVpZ2h0PSI0MCIgcng9IjEwIiBmaWxsPSIjRENGOCNDIi8+CjxyZWN0IHg9IjIwIiB5PSIzNTAiIHdpZHRoPSIyODAiIGhlaWdodD0iNjAiIHJ4PSIxMCIgZmlsbD0iI0ZGRkZGRiIvPgo8cmVjdCB4PSI0MCIgeT0iMzcwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwIiByeD0iNSIgZmlsbD0iI0VGNUY1RiIvPgo8cmVjdCB4PSIyNDAiIHk9IjM2NSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjMwIiByeD0iMTUiIGZpbGw9IiMxMjhDN0UiLz4KPC9zdmc+Cg==",
+            "sizes": "320x560",
+            "type": "image/svg+xml",
+            "form_factor": "narrow"
+        }
+    ]
+}
